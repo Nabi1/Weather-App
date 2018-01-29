@@ -1,0 +1,88 @@
+html {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+body{
+	/* background-color: #ffc107;   */
+	color: #152637;
+	/* opacity: 0.9; */
+	margin: 8em;
+	display: contents;
+}
+h1 {
+	width: 50%;
+	margin: 1em auto;
+	text-align: center;
+	font-weight: bolder;
+}
+
+#container__main{
+	width: 70%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #152637;
+	color: #ffc107;
+	border-radius: 15px;
+	border-color: #152637;
+	border: solid;
+}
+#cityAndTemp {
+	width: 50%;
+}
+
+#skyAndLogo {
+	width: 50%;
+}
+#city {
+	font-size: 2em;
+}
+
+#temp {
+	height: 50%;
+}
+#temp:hover {
+	color: green;
+}
+#sky {
+	height: 40%;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+
+font-weight: bolder;
+}
+#logoSky {
+	height: auto;
+}
+.infos {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:  center;
+	    -ms-flex-pack:  center;
+	        justify-content:  center;
+	height: 50%;
+}
+#buttons {
+	margin: 1em;
+	text-align: center;
+}
+button {
+	background-color: #152637;
+	color: #ffc107;
+	border: solid; 
+	border-color: #ffc107;
+}
+
+#made {
+	width: 50%;
+	margin: 1em auto;
+	font-style: italic;
+	text-align: center;
+	background-color: #ffc107;
+opacity: 0.8;
+width: 20%;
+
+}
