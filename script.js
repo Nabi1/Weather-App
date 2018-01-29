@@ -1,11 +1,15 @@
 $(document).ready(function() {
     var long;
     var lat
+                 // Localisation by longitude & latitude
+    
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-
+            
+                // API
+            
             var api = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=0e35b04af175cacb4a6920b89c8b40b4";
 
             $.getJSON(api, function(data) {
@@ -21,7 +25,9 @@ $(document).ready(function() {
                 $("#city").html(city);
                 $("#temp").html(temperatureCelc);
                 $("#sky").html(ciel);
-
+                
+                // Background
+                
                 if (ciel === "Drizzle" || "Mist") {
                     $("html").css("backgroundImage", "url(https://airolator.com/wp-content/uploads/2017/05/raindrops-828954_1920-1080x675.jpg)")
                 } else if (ciel === "Thunderstorm") {
@@ -38,7 +44,8 @@ $(document).ready(function() {
                     $("html").css("backgroundImage", "url(https://fr.cdn.v5.futura-sciences.com/buildsv6/images/wide1920/9/5/0/9500ce2c3f_76223_01-intro-32.jpg)")
                 }
 
-
+                // Button
+                
                 $("#myBtnC").on('click', function() {         
                           $("#temp").html(temperatureCelc);
                 })
